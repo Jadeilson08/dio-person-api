@@ -1,5 +1,6 @@
 package one.digitalinnovation.personapi.controller;
 
+import one.digitalinnovation.personapi.model.Person;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,7 +12,6 @@ public class PersonController {
 
     @GetMapping("")
     public ResponseEntity<String> getBook(){
-
         return ResponseEntity.ok().body("foo");
     }
 }
